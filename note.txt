@@ -1,0 +1,33 @@
+操作命令小结
+
+    克隆github上已有的仓库
+
+git clone https://github.com/你的github用户名/github仓库名.git
+
+
+    或者是在github上新建仓库并且在本地新建同名的仓库
+
+cd ~/Document/dockerfiles
+git init
+
+
+    对本地仓库内容进行更改（如果是多次对本地的某个仓库进行这样的操作，直接从此步开始即可，不要前面的操作了，因为本地仓库已有具有了github仓库的.git文件了）
+
+    对更改内容进行提交
+
+git add 更改文件名或者是文件夹名或者是点"."
+git commit -m "commit内容标注"
+
+    本地仓库与github仓库关联
+
+git remote add origin https://github.com/你的github用户名/你的github仓库.git  
+
+    push
+
+git push origin master
+
+
+注：另外可能用到的命令
+
+git remote rm origin
+git pull origin master
